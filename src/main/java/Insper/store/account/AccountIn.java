@@ -3,8 +3,12 @@ package Insper.store.account;
 import lombok.Builder;
 import lombok.experimental.Accessors;
 
+
 @Builder
 @Accessors(fluent = true, chain = true)
-public record AccountIn (String name, String email, String password){
+public record AccountIn (
+    String name, 
+    String email, 
+    String password){
 
 }

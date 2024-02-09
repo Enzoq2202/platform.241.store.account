@@ -1,6 +1,7 @@
 package Insper.store.account;
 
-import org.apache.catalina.connector.Response;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
@@ -12,5 +13,5 @@ public interface AccountController{
         );
 
     @PutMapping("/accounts/{id}")
-    public ResponseEntity<AccountOut> update(string id, AccountIn accountIn);
+    public ResponseEntity<AccountOut> update(String id, AccountIn accountIn);
 }
